@@ -22,59 +22,57 @@
     />
     <link rel="stylesheet" href="css/style.css" />
   </head>
-
-  <div class="container-fluid user-input-container">
-    <div class="row justify-content-center align-items-center user-input">
-      <div class="col-lg-4 col-md-10">
-        <form>
-          <div class="row">
-            <h1 class="app-headline">
-              Have your two favorite stars been in the same film?
-            </h1>
-          </div>
-          <div class="row">
-            <div class="col-md-6">
-              <label for="first-actor">Enter a name</label>
-              <input
-                type="text"
-                class="form-control form-control-lg"
-                name="first-actor-name"
-                id="first-actor"
-                placeholder="Tom Hanks"
-                required
-              />
+  <body>
+    <div class="container-fluid user-input-container">
+      <div class="row justify-content-center align-items-center user-input">
+        <div class="col-lg-4 col-md-10">
+          <form>
+            <div class="row">
+              <h1 class="app-headline">
+                Have your two favorite stars been in the same film?
+              </h1>
             </div>
-            <div class="col-md-6">
-              <label for="second-actor">Enter another name</label>
-              <input
-                type="text"
-                class="form-control form-control-lg"
-                name="second-actor-name"
-                id="second-actor"
-                placeholder="Meryl Streep"
-                required
-              />
+            <div class="row">
+              <div class="col-md-6">
+                <label for="first-actor">Enter a name</label>
+                <input
+                  type="text"
+                  class="form-control form-control-lg"
+                  name="first-actor-name"
+                  id="first-actor"
+                  placeholder="Tom Hanks"
+                  required
+                />
+              </div>
+              <div class="col-md-6">
+                <label for="second-actor">Enter another name</label>
+                <input
+                  type="text"
+                  class="form-control form-control-lg"
+                  name="second-actor-name"
+                  id="second-actor"
+                  placeholder="Meryl Streep"
+                  required
+                />
+              </div>
             </div>
-          </div>
-          <input
-            type="submit"
-            class="btn btn-danger btn-lg btn-block"
-            value="Lets find out!"
-          />
-        </form>
+            <input
+              type="submit"
+              class="btn btn-danger btn-lg btn-block"
+              value="Lets find out!"
+            />
+          </form>
+        </div>
       </div>
     </div>
-  </div>
-
-  <div class="container actor-details-container">
-    <div class="row" id="actor-details"></div>
-  </div>
-
-  <div class="container">
-    <div class="row" id="movie-info-container"></div>
-  </div>
-
-  <body>
+  
+    <div class="container actor-details-container">
+      <div class="row" id="actor-details"></div>
+    </div>
+  
+    <div class="container">
+      <div class="row" id="movie-info-container"></div>
+    </div>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
